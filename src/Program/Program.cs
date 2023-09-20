@@ -30,6 +30,10 @@ namespace Full_GRASP_And_SOLID
             printer.PrintTicket(recipe);
             IPrinter printer2 = new FilePrinter();
             printer2.PrintTicket(recipe);
+            /*
+            Agrego el metodo PrintTicket a la interfaz IPrinter, para que las clases ConsolePrinter y FilePrinter lo implementen. De esta manera
+            se cumple con el principio de SRC, ya que cada clase tiene una única responsabilidad.
+            */
         }
 
         private static void PopulateCatalogs()
